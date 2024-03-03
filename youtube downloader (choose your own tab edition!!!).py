@@ -7,7 +7,7 @@ Dlink_Name = []
 def youtube_downloader(link):
     yt = YouTube(link)
     yd = yt.streams.get_highest_resolution()
-    yd.download('C:\\Users\\Home\\Videos\\ytd')
+    yd.download('C:\\Users\\nourb\\Videos\\ytd')
 
 
 for profile in FirefoxProfile.get_profiles():
@@ -44,14 +44,21 @@ print(" ")
 
 Newlink_positions = []
 
+k = 1
 
-for l in range(len(Dlink)):
-    a = input("Please enter which video to download. Please only use positions from previois printed list ")
-    if a == "end":
-        break
-    elif a != "end":
-       a = int(a)
-       Newlink_positions.append(a)
+while k == 1 :
+    for l in range(len(Dlink)):
+        a = input("Please enter which video to download. Please only use positions from previois printed list ")
+        if a == "end":
+            k+=1
+            break
+        try:
+            x = int(a)
+            Newlink_positions.append(x)
+
+        except ValueError:
+            print("please enter an integer")
+
 
 
 
