@@ -5,3 +5,6 @@ Updates to come!!!!
 
 
 The Choose Your Own Tab edition allows you to choose which tabs you would like to download from
+
+
+Update!!! / now has fail safe in case a not accepted input is entered
